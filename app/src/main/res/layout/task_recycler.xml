@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="14dp"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:id="@+id/checkbox"
+
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+
+            android:fontFamily="monospace"
+            android:text="This is a sample task 1"
+            android:textColor="#55595D"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/task_delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:text="DEL"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/checkbox"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_alignParentEnd="true"
+            android:onClick="onTaskDeleteButtonClicked"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
